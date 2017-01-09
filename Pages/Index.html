@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <!--Es recomendable ponerlo al final del documento para que se cargue bien la pagina y encuentre los Id y todas las etiquetas-->
+    <!--Para un script de JavaScript dentro del Html-->
+    <!--Asi no lo vamos a hacer-->
+    <script type="text/javascript" src="../Scripts/JavaScript.js">
+        ////alert("Hola Mundo"); //Ventana emergente
+        //function saludo() {
+        //    var texto = "Hola Mundo";
+        //    //getElementById se encarga de buscar el id(es unico dentro del documento) dentro del html
+        //    //innerHTML se mete dentro de la etiqueta que hayamos buscado
+        //    document.getElementById("divMensaje").innerHTML = texto;
+        //}
+    </script>
+</head>
+<!--Poner el onLoad y la funcion que necesita-->
+<!--<body onload="saludo()">-->
+<body>    
+    
+    <!--Nombre-->
+        <label id="lblNom">Nombre:</label>
+        <input type="text" id="txtNombre" />
+        <label id="errorNom"></label>
+
+    <!--Apellidos-->
+        <label id="lblApe">Apellidos: </label>
+        <input type="text" id="txtApe" />
+        <label id="errorApe" />
+
+    <!--Boton-->
+    <br />
+        <button id="btnEnviar" onclick="concatenar()">Enviar</button>   
+        <button id="enviar" onclick="concat()">Enviar 2</button>     
+   <br/>
+       <label id="nomCompleto" />
+   
+
+
+    <div id="divMensaje">
+
+    </div>
+
+</body>
+</html>
